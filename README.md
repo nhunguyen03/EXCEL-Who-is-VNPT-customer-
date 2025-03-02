@@ -104,8 +104,13 @@ Xử lý các lỗi sai trên bằng hàm XLOOKUP kết hợp với các hàm c�
 
 ### 1. Static dashboard
 Dashboard tĩnh được visualize dựa trên lớp data tĩnh **InteractiveData**
+
+![image](https://github.com/user-attachments/assets/aba97e33-839f-457f-85ae-5aaa07f76d65)
+
 ### 2. Dynamic dashboard
 Ý tưởng của dashboard động là tạo 1 lớp data (**DetailData**) có thể thay đổi được theo filter. Sau đó, visualize các chỉ số trên lớp data đó _(concept tương tự như page-level filter trong PBI)_. Dùng hàm QUERY kết hợp với các hàm nâng cao như REGEXECTRACT, TEXTJOIN, ... để tự động hóa việc dữ liệu thay đổi theo filter
+
+![image](https://github.com/user-attachments/assets/0f8cab48-a7ed-42f2-9e69-4948621636d0)
 
 ## IV. INSIGHTS AND RECOMMENDATIONS
 Để biết thêm chi tiết về insights và recommendations, tham khảo tại đây:
