@@ -103,12 +103,29 @@ Xử lý các lỗi sai trên bằng hàm XLOOKUP kết hợp với các hàm c�
 [Link Visualize Data here](https://docs.google.com/spreadsheets/d/1t6nKFCS6BEpNehD_rQ-PWZYZhF4Os0plHUIz3Sg8mCY/edit?gid=1013104594#gid=1013104594)
 
 ### 1. Static dashboard
-Dashboard tĩnh được visualize dựa trên lớp data tĩnh **InteractiveData**
+**CÁCH LÀM**: Dashboard tĩnh được visualize dựa trên lớp data tĩnh **InteractiveData**
+
+Overview dashboard gồm 2 chỉ số quan trọng là **tổng khách hàng (_Num of consignee_)** và **tổng doanh thu (_Total revenue_)**.
+
+Doanh thu được break down theo 2 dimensions: 
+- **Loại hàng hóa (_product type_)** - để xác định loại hàng hóa chủ yếu mà VNPT Express vận chuyển >> từ đó, tạo thêm các dịch vụ phụ (Extra charge) phù hợp với loại hàng hóa để tăng doanh số
+- **Nhóm khách hàng (_consignee type_)** - để xác định nhóm khách hàng chủ lực >> từ đó, có những chính sách giữ chân
+
+Nhìn số liệu **revenue qua thời gian (MoM và YoY)** để thấy những điểm bất thường (Ví dụ doanh thu đột ngột giảm vào tháng 2-4/2025). Ngoài ra, các chỉ số **retention rate** và **AOV** (chi tiêu trung bình trên đơn hàng) cũng giúp end-user hiểu tổng quát về từng nhóm khách hàng
 
 ![image](https://github.com/user-attachments/assets/aba97e33-839f-457f-85ae-5aaa07f76d65)
 
 ### 2. Dynamic dashboard
-Ý tưởng của dashboard động là tạo 1 lớp data (**DetailData**) có thể thay đổi được theo filter. Sau đó, visualize các chỉ số trên lớp data đó _(concept tương tự như page-level filter trong PBI)_. Dùng hàm QUERY kết hợp với các hàm nâng cao như REGEXECTRACT, TEXTJOIN, ... để tự động hóa việc dữ liệu thay đổi theo filter
+**CÁCH LÀM**: Ý tưởng của dashboard động là tạo 1 lớp data (**DetailData**) có thể thay đổi được theo filter. Sau đó, visualize các chỉ số trên lớp data đó **_(concept tương tự như page-level filter trong PBI)_**. Dùng hàm QUERY kết hợp với các hàm nâng cao như REGEXECTRACT, TEXTJOIN, ... để tự động hóa việc dữ liệu thay đổi theo filter
+
+Detail dashboard gồm các chỉ số quan trọng: **số lượng khách hàng (_Num of consignee_)**, **tổng doanh số (_Total revenue_)**, **tỷ lệ đóng góp doanh thu (_% Contribution_)**, **tỷ lệ giữ chân (_Retention rate_)** và **chi tiêu trung bình trên đơn hàng (_AOV_)**
+
+Break down revenue theo 3 dimensions:
+- **Nhóm khách hàng gửi (_Consignee type_)** - để biết đối tác gửi hàng chính của từng nhóm consignee là ai, % đóng góp doanh thu. List ra 10 quốc gia được nhập hàng nhiều nhất để xác định vị trí của đối tác
+- **Loại hàng hóa (_Product type_)** - để biết loại hàng hóa mà nhóm consignee nhập chủ yếu. List ra 10 hàng hóa được vận chuyển nhiều nhất **(_Content_)**
+- **Thành phố khách hàng nhận (_Consignee city_)** - để xác định các thành phố nhập hàng về nhiều nhất. Từ đó, có thể có những chính sách ưu tiên vận chuyển cho các thành phố này
+
+Ngoài ra, tính % số lượng đơn hàng có dùng các **dịch vụ phụ (_Extra charge_)** hoặc **dịch vụ có phụ phí (_Surcharge_)** để biết xu hướng khách hàng ưu tiên việc tối ưu chi phí hay ưu tiên sự tiện lợi và an toàn. [Tham khảo các loại phí dịch vụ tại đây](https://docs.rocketshipit.com/rs/docs/dhl-addons.html?utm_source=chatgpt.com)
 
 ![image](https://github.com/user-attachments/assets/0f8cab48-a7ed-42f2-9e69-4948621636d0)
 
