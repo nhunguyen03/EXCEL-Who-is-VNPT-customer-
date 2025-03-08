@@ -27,25 +27,24 @@ Link dataset here:
 
   [Tham khảo thêm các mã dịch vụ tại đây](https://docs.rocketshipit.com/rs/docs/dhl-addons.html?utm_source=chatgpt.com)
 
-  - **Contents**: các hàng hóa trong lô hàng
-  - **Shipper address**: địa chỉ người gửi hàng
-  - **Shipper City**: thành phố người gửi hàng
-  - **Shipper Company Name**: tên người gửi hàng
-  - **Destination Country/Territory Area Code**: mã vùng quốc gia đích đến
-  - **Consignee Company Name**: tên người nhận hàng
-  - **Origin Facility**: mã kho vận chuyển
-  - **Operations Shipper Reference**: số tham chiếu do người gửi cung cấp, để quản lý và theo dõi quá trình vận chuyển
-  - **Currency Selected Conversion Rate**: tỷ giá chuyển đổi tiền tệ được chọn. Ở đây là 1 nghĩa là đơn vị tiền được lựa chọn là USD
-  - **Billing Shipper Reference**: số tham chiếu liên kết với hóa đơn vận chuyển do người gửi (shipper) tạo ra
-  - **MAC Code**: mã sản phẩm
-  - **Consignee Address**: địa chỉ người nhận hàng
-  - **Consignee City**: thành phố người nhận hàng
-  - **Calculated Number of Pieces**: số lượng kiện hàng trong lô hàng
-  - **Count of Shipments**: số lần vận chuyển lô hàng
-  - **Billing Net Weight Charge**: phí tính theo trọng lượng lô hàng
-  - **Billed Weight**: trọng lượng lô hàng
+- **Contents**: các hàng hóa trong lô hàng
+- **Shipper address**: địa chỉ người gửi hàng
+- **Shipper City**: thành phố người gửi hàng
+- **Shipper Company Name**: tên người gửi hàng
+- **Destination Country/Territory Area Code**: mã vùng quốc gia đích đến
+- **Consignee Company Name**: tên người nhận hàng
+- **Origin Facility**: mã kho vận chuyển
+- **Operations Shipper Reference**: số tham chiếu do người gửi cung cấp, để quản lý và theo dõi quá trình vận chuyển
+- **Currency Selected Conversion Rate**: tỷ giá chuyển đổi tiền tệ được chọn. Ở đây là 1 nghĩa là đơn vị tiền được lựa chọn là USD
+- **Billing Shipper Reference**: số tham chiếu liên kết với hóa đơn vận chuyển do người gửi (shipper) tạo ra
+- **MAC Code**: mã sản phẩm
+- **Consignee Address**: địa chỉ người nhận hàng
+- **Consignee City**: thành phố người nhận hàng
+- **Calculated Number of Pieces**: số lượng kiện hàng trong lô hàng
+- **Count of Shipments**: số lần vận chuyển lô hàng
+- **Billing Net Weight Charge**: phí tính theo trọng lượng lô hàng
+- **Billed Weight**: trọng lượng lô hàng
  
-  
 ## II. PROCESS DATA
 [Link Process Data here](https://docs.google.com/spreadsheets/d/1M1qsbT4Tony5o0XI9C94FpjU1QE5w-9pA6D4HanNQVQ/edit?gid=2095503206#gid=2095503206) 
 
